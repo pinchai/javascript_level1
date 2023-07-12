@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>7.JAVASCRIPT – Conditional Statements</title>
+</head>
+<body>
+<center>
+  <h1 style="color: red">7.JAVASCRIPT – Conditional Statements</h1>
+</center>
+</body>
+<script>
+    let name = [
+        'peak',
+        'dara',
+        'thida',
+        'theara',
+    ]
+
+    let student = {
+        'name': 'chai',
+        'gender': 'male',
+        'address': 'PP'
+    }
+
+    let products = [
+        {
+            'name' : 'istar #23',
+            'stock' : 100,
+            'price' : 27,
+            'symbol' : '$',
+        },
+        {
+            'name' : 'istar #25',
+            'stock' : 10,
+            'price' : 30,
+            'symbol' : '$',
+        },
+        {
+            'name' : 'istar #27',
+            'stock' : 50,
+            'price' : 200000,
+            'symbol' : '៛',
+        }
+    ]
+    products.forEach((product, index)=>{
+        let sub_total = product['price'] * product['stock']
+        console.log(`
+        ProductName: ${product['name']}
+        Price: ${product['price']} ${product['symbol']}
+        Current Stock: ${product['stock']}
+        Sub Total: ${sub_total.toLocaleString()} ${product['symbol']}
+        `)
+    })
+
+
+
+</script>
+</html>
